@@ -1,0 +1,38 @@
+{
+  "name": "lowkey",
+  "version": "1.0.0",
+  "description": "Makes your agent text like a person instead of a press release: lowercase, one thought per line, no em dashes, a couple of emojis. Code stays exact.",
+  "author": {
+    "name": "Om Lahore",
+    "url": "https://github.com/omlahore"
+  },
+  "homepage": "https://github.com/omlahore/lowkey",
+  "repository": "https://github.com/omlahore/lowkey",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "skill",
+    "writing-style",
+    "texting",
+    "tone",
+    "github-comments"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "lowkey",
+    "shortDescription": "Talk like the room, not like an assistant",
+    "developerName": "Om Lahore",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions"
+    ],
+    "websiteURL": "https://github.com/omlahore/lowkey",
+    "defaultPrompt": [
+      "Use lowkey for this reply.",
+      "Draft my reply to this review in lowkey."
+    ],
+    "brandColor": "#b5c858",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
+  }
+}

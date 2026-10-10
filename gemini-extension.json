@@ -1,0 +1,6 @@
+{
+  "name": "lowkey",
+  "version": "1.0.0",
+  "description": "Makes your agent text like a person instead of a press release: lowercase, one thought per line, no em dashes, a couple of emojis. Code stays exact.",
+  "contextFileName": "AGENTS.md"
+}

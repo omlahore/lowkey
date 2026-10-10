@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "lowkey",
+  "description": "Your agent, but it texts like a person.",
+  "owner": {
+    "name": "Om Lahore",
+    "url": "https://github.com/omlahore"
+  },
+  "plugins": [
+    {
+      "name": "lowkey",
+      "description": "Text like a person, not a press release. Lowercase, one thought per line, no em dashes. Code stays exact.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "collected_at": "2026-10-10T21:46Z",
+  "total": 615,
+  "repos": 19,
+  "per_repo": {
+    "vercel/next.js": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    },
+    "facebook/react": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    },
+    "microsoft/vscode": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    },
+    "rust-lang/rust": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    },
+    "golang/go": {
+      "pr_comment": 2,
+      "issue_comment": 12,
+      "total": 14
+    },
+    "kubernetes/kubernetes": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    },
+    "tailwindlabs/tailwindcss": {
+      "pr_review": 4,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 26
+    },
+    "denoland/deno": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    },
+    "sveltejs/svelte": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    },
+    "home-assistant/core": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    },
+    "godotengine/godot": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    },
+    "python/cpython": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    },
+    "pytorch/pytorch": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    },
+    "vuejs/core": {
+      "pr_review": 9,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 31
+    },
+    "nodejs/node": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    },
+    "vitejs/vite": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    },
+    "huggingface/transformers": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    },
+    "microsoft/TypeScript": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    },
+    "grafana/grafana": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12,
+      "total": 34
+    }
+  },
+  "by_kind": {
+    "issue_comment": 228,
+    "pr_comment": 182,
+    "pr_review": 205
+  },
+  "period": [
+    "2021-01-01T00:00:00Z",
+    "2022-09-30T00:00:00Z"
+  ],
+  "params": {
+    "targets_per_repo": {
+      "pr_review": 12,
+      "pr_comment": 10,
+      "issue_comment": 12
+    },
+    "windows_per_repo": 6,
+    "window_days": 3,
+    "pages_per_window": 2,
+    "max_per_author_per_repo": 4,
+    "max_per_thread": 2,
+    "max_chars": 4000,
+    "seed": "2026"
+  },
+  "dropped_comments_by_reason": {
+    "created_outside_window": 10264,
+    "empty_or_commands_only": 1325,
+    "too_long": 283,
+    "bot": 3562,
+    "duplicate": 1144,
+    "capped_while_sampling": 72
+  },
+  "api_calls": 342
+}

@@ -1,0 +1,794 @@
+{
+  "command": "python3 style_stats.py data/human_github.jsonl data/human_github_pre2023.jsonl data/human_hn.jsonl --min-words 10 --json results/human_baseline.json --md results/human_baseline.md",
+  "corpora": {
+    "human_github": {
+      "messages": 788,
+      "words": 25119,
+      "sentences": 2004,
+      "lines": 1499,
+      "metrics": {
+        "cap_start": {
+          "kind": "pct",
+          "overall": 0.8597804391217565,
+          "mean": 0.8320615609607906,
+          "median": 1.0
+        },
+        "lowercase_msgs": {
+          "kind": "pct",
+          "overall": 0.1258023106546855,
+          "mean": null,
+          "median": null
+        },
+        "period_end_lines": {
+          "kind": "pct",
+          "overall": 0.437625083388926,
+          "mean": 0.44040726119704915,
+          "median": 0.2899159663865546
+        },
+        "no_period_msgs": {
+          "kind": "pct",
+          "overall": 0.4720812182741117,
+          "mean": null,
+          "median": null
+        },
+        "em_dash_per_1k_words": {
+          "kind": "rate",
+          "overall": 1.3137465663442016,
+          "mean": null,
+          "median": null
+        },
+        "en_dash_per_1k_words": {
+          "kind": "rate",
+          "overall": 0.0,
+          "mean": null,
+          "median": null
+        },
+        "dash_msgs": {
+          "kind": "pct",
+          "overall": 0.02918781725888325,
+          "mean": null,
+          "median": null
+        },
+        "emoji_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 0.07487309644670051,
+          "median": 0.0
+        },
+        "emoji_msgs": {
+          "kind": "pct",
+          "overall": 0.05456852791878172,
+          "mean": null,
+          "median": null
+        },
+        "words_per_line": {
+          "kind": "num",
+          "overall": null,
+          "mean": 16.757171447631755,
+          "median": 12
+        },
+        "lines_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 1.9022842639593909,
+          "median": 1.0
+        },
+        "words_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 31.876903553299492,
+          "median": 19.0
+        },
+        "assistant_tells": {
+          "kind": "pct",
+          "overall": 0.02284263959390863,
+          "mean": null,
+          "median": null
+        },
+        "md_header": {
+          "kind": "pct",
+          "overall": 0.006345177664974619,
+          "mean": null,
+          "median": null
+        },
+        "md_bold": {
+          "kind": "pct",
+          "overall": 0.02918781725888325,
+          "mean": null,
+          "median": null
+        },
+        "md_list": {
+          "kind": "pct",
+          "overall": 0.04314720812182741,
+          "mean": null,
+          "median": null
+        },
+        "md_any": {
+          "kind": "pct",
+          "overall": 0.06345177664974619,
+          "mean": null,
+          "median": null
+        },
+        "casual_markers": {
+          "kind": "pct",
+          "overall": 0.008883248730964468,
+          "mean": null,
+          "median": null
+        },
+        "subjectless_start": {
+          "kind": "pct",
+          "overall": 0.023453093812375248,
+          "mean": 0.02520793169060178,
+          "median": 0.0
+        }
+      },
+      "assistant_tell_messages": {
+        "let me know if": 7,
+        "thank you for your": 3,
+        "absolutely": 2,
+        "i appreciate your": 2,
+        "i'd be happy to": 1,
+        "certainly": 1,
+        "feel free to": 1,
+        "here is a": 1
+      },
+      "source": "data/human_github.jsonl",
+      "dropped_empty": 1
+    },
+    "human_github (>=10 words)": {
+      "messages": 589,
+      "words": 24053,
+      "sentences": 1789,
+      "lines": 1287,
+      "metrics": {
+        "cap_start": {
+          "kind": "pct",
+          "overall": 0.8759083286752376,
+          "mean": 0.8674788782510626,
+          "median": 1.0
+        },
+        "lowercase_msgs": {
+          "kind": "pct",
+          "overall": 0.08020477815699659,
+          "mean": null,
+          "median": null
+        },
+        "period_end_lines": {
+          "kind": "pct",
+          "overall": 0.4731934731934732,
+          "mean": 0.511105130430008,
+          "median": 0.5
+        },
+        "no_period_msgs": {
+          "kind": "pct",
+          "overall": 0.3735144312393888,
+          "mean": null,
+          "median": null
+        },
+        "em_dash_per_1k_words": {
+          "kind": "rate",
+          "overall": 1.3719702324034424,
+          "mean": null,
+          "median": null
+        },
+        "en_dash_per_1k_words": {
+          "kind": "rate",
+          "overall": 0.0,
+          "mean": null,
+          "median": null
+        },
+        "dash_msgs": {
+          "kind": "pct",
+          "overall": 0.03904923599320883,
+          "mean": null,
+          "median": null
+        },
+        "emoji_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 0.08149405772495756,
+          "median": 0
+        },
+        "emoji_msgs": {
+          "kind": "pct",
+          "overall": 0.05432937181663837,
+          "mean": null,
+          "median": null
+        },
+        "words_per_line": {
+          "kind": "num",
+          "overall": null,
+          "mean": 18.68919968919969,
+          "median": 14
+        },
+        "lines_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 2.1850594227504243,
+          "median": 1
+        },
+        "words_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 40.83701188455009,
+          "median": 27
+        },
+        "assistant_tells": {
+          "kind": "pct",
+          "overall": 0.030560271646859084,
+          "mean": null,
+          "median": null
+        },
+        "md_header": {
+          "kind": "pct",
+          "overall": 0.008488964346349746,
+          "mean": null,
+          "median": null
+        },
+        "md_bold": {
+          "kind": "pct",
+          "overall": 0.03904923599320883,
+          "mean": null,
+          "median": null
+        },
+        "md_list": {
+          "kind": "pct",
+          "overall": 0.057724957555178265,
+          "mean": null,
+          "median": null
+        },
+        "md_any": {
+          "kind": "pct",
+          "overall": 0.08488964346349745,
+          "mean": null,
+          "median": null
+        },
+        "casual_markers": {
+          "kind": "pct",
+          "overall": 0.011884550084889643,
+          "mean": null,
+          "median": null
+        },
+        "subjectless_start": {
+          "kind": "pct",
+          "overall": 0.01956400223588597,
+          "mean": 0.013885629329315335,
+          "median": 0.0
+        }
+      },
+      "assistant_tell_messages": {
+        "let me know if": 7,
+        "thank you for your": 3,
+        "absolutely": 2,
+        "i appreciate your": 2,
+        "i'd be happy to": 1,
+        "certainly": 1,
+        "feel free to": 1,
+        "here is a": 1
+      },
+      "min_words": 10,
+      "source": "data/human_github.jsonl",
+      "dropped_empty": 1
+    },
+    "human_github_pre2023": {
+      "messages": 615,
+      "words": 18092,
+      "sentences": 1446,
+      "lines": 1047,
+      "metrics": {
+        "cap_start": {
+          "kind": "pct",
+          "overall": 0.8713692946058091,
+          "mean": 0.8502144824872099,
+          "median": 1.0
+        },
+        "lowercase_msgs": {
+          "kind": "pct",
+          "overall": 0.1024793388429752,
+          "mean": null,
+          "median": null
+        },
+        "period_end_lines": {
+          "kind": "pct",
+          "overall": 0.437440305635148,
+          "mean": 0.43666697031115975,
+          "median": 0.3333333333333333
+        },
+        "no_period_msgs": {
+          "kind": "pct",
+          "overall": 0.47317073170731705,
+          "mean": null,
+          "median": null
+        },
+        "em_dash_per_1k_words": {
+          "kind": "rate",
+          "overall": 0.11054609772275038,
+          "mean": null,
+          "median": null
+        },
+        "en_dash_per_1k_words": {
+          "kind": "rate",
+          "overall": 0.0,
+          "mean": null,
+          "median": null
+        },
+        "dash_msgs": {
+          "kind": "pct",
+          "overall": 0.0032520325203252032,
+          "mean": null,
+          "median": null
+        },
+        "emoji_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 0.06666666666666667,
+          "median": 0
+        },
+        "emoji_msgs": {
+          "kind": "pct",
+          "overall": 0.056910569105691054,
+          "mean": null,
+          "median": null
+        },
+        "words_per_line": {
+          "kind": "num",
+          "overall": null,
+          "mean": 17.27984718242598,
+          "median": 13
+        },
+        "lines_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 1.7024390243902439,
+          "median": 1
+        },
+        "words_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 29.41788617886179,
+          "median": 20
+        },
+        "assistant_tells": {
+          "kind": "pct",
+          "overall": 0.00975609756097561,
+          "mean": null,
+          "median": null
+        },
+        "md_header": {
+          "kind": "pct",
+          "overall": 0.004878048780487805,
+          "mean": null,
+          "median": null
+        },
+        "md_bold": {
+          "kind": "pct",
+          "overall": 0.014634146341463415,
+          "mean": null,
+          "median": null
+        },
+        "md_list": {
+          "kind": "pct",
+          "overall": 0.013008130081300813,
+          "mean": null,
+          "median": null
+        },
+        "md_any": {
+          "kind": "pct",
+          "overall": 0.030894308943089432,
+          "mean": null,
+          "median": null
+        },
+        "casual_markers": {
+          "kind": "pct",
+          "overall": 0.01951219512195122,
+          "mean": null,
+          "median": null
+        },
+        "subjectless_start": {
+          "kind": "pct",
+          "overall": 0.013831258644536652,
+          "mean": 0.022382920110192838,
+          "median": 0.0
+        }
+      },
+      "assistant_tell_messages": {
+        "feel free to": 4,
+        "absolutely": 1,
+        "here is a": 1,
+        "here's a": 1
+      },
+      "source": "data/human_github_pre2023.jsonl",
+      "dropped_empty": 0
+    },
+    "human_github_pre2023 (>=10 words)": {
+      "messages": 454,
+      "words": 17225,
+      "sentences": 1265,
+      "lines": 873,
+      "metrics": {
+        "cap_start": {
+          "kind": "pct",
+          "overall": 0.8877470355731225,
+          "mean": 0.8818472178228276,
+          "median": 1.0
+        },
+        "lowercase_msgs": {
+          "kind": "pct",
+          "overall": 0.0598669623059867,
+          "mean": null,
+          "median": null
+        },
+        "period_end_lines": {
+          "kind": "pct",
+          "overall": 0.4765177548682703,
+          "mean": 0.501211865069082,
+          "median": 0.5
+        },
+        "no_period_msgs": {
+          "kind": "pct",
+          "overall": 0.3788546255506608,
+          "mean": null,
+          "median": null
+        },
+        "em_dash_per_1k_words": {
+          "kind": "rate",
+          "overall": 0.11611030478955008,
+          "mean": null,
+          "median": null
+        },
+        "en_dash_per_1k_words": {
+          "kind": "rate",
+          "overall": 0.0,
+          "mean": null,
+          "median": null
+        },
+        "dash_msgs": {
+          "kind": "pct",
+          "overall": 0.004405286343612335,
+          "mean": null,
+          "median": null
+        },
+        "emoji_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 0.06387665198237885,
+          "median": 0.0
+        },
+        "emoji_msgs": {
+          "kind": "pct",
+          "overall": 0.05286343612334802,
+          "mean": null,
+          "median": null
+        },
+        "words_per_line": {
+          "kind": "num",
+          "overall": null,
+          "mean": 19.73081328751432,
+          "median": 16
+        },
+        "lines_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 1.922907488986784,
+          "median": 1.0
+        },
+        "words_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 37.940528634361236,
+          "median": 26.0
+        },
+        "assistant_tells": {
+          "kind": "pct",
+          "overall": 0.013215859030837005,
+          "mean": null,
+          "median": null
+        },
+        "md_header": {
+          "kind": "pct",
+          "overall": 0.006607929515418502,
+          "mean": null,
+          "median": null
+        },
+        "md_bold": {
+          "kind": "pct",
+          "overall": 0.019823788546255508,
+          "mean": null,
+          "median": null
+        },
+        "md_list": {
+          "kind": "pct",
+          "overall": 0.01762114537444934,
+          "mean": null,
+          "median": null
+        },
+        "md_any": {
+          "kind": "pct",
+          "overall": 0.04185022026431718,
+          "mean": null,
+          "median": null
+        },
+        "casual_markers": {
+          "kind": "pct",
+          "overall": 0.024229074889867842,
+          "mean": null,
+          "median": null
+        },
+        "subjectless_start": {
+          "kind": "pct",
+          "overall": 0.009486166007905139,
+          "mean": 0.012287509238728752,
+          "median": 0.0
+        }
+      },
+      "assistant_tell_messages": {
+        "feel free to": 4,
+        "absolutely": 1,
+        "here is a": 1,
+        "here's a": 1
+      },
+      "min_words": 10,
+      "source": "data/human_github_pre2023.jsonl",
+      "dropped_empty": 0
+    },
+    "human_hn": {
+      "messages": 497,
+      "words": 24613,
+      "sentences": 1604,
+      "lines": 911,
+      "metrics": {
+        "cap_start": {
+          "kind": "pct",
+          "overall": 0.9513715710723192,
+          "mean": 0.9531809436354891,
+          "median": 1.0
+        },
+        "lowercase_msgs": {
+          "kind": "pct",
+          "overall": 0.028282828282828285,
+          "mean": null,
+          "median": null
+        },
+        "period_end_lines": {
+          "kind": "pct",
+          "overall": 0.6992316136114161,
+          "mean": 0.6806391462327076,
+          "median": 1.0
+        },
+        "no_period_msgs": {
+          "kind": "pct",
+          "overall": 0.24949698189134809,
+          "mean": null,
+          "median": null
+        },
+        "em_dash_per_1k_words": {
+          "kind": "rate",
+          "overall": 0.2031446796408402,
+          "mean": null,
+          "median": null
+        },
+        "en_dash_per_1k_words": {
+          "kind": "rate",
+          "overall": 0.12188680778450413,
+          "mean": null,
+          "median": null
+        },
+        "dash_msgs": {
+          "kind": "pct",
+          "overall": 0.01006036217303823,
+          "mean": null,
+          "median": null
+        },
+        "emoji_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 0.0,
+          "median": 0
+        },
+        "emoji_msgs": {
+          "kind": "pct",
+          "overall": 0.0,
+          "mean": null,
+          "median": null
+        },
+        "words_per_line": {
+          "kind": "num",
+          "overall": null,
+          "mean": 27.01756311745335,
+          "median": 22
+        },
+        "lines_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 1.8329979879275653,
+          "median": 1
+        },
+        "words_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 49.52313883299799,
+          "median": 33
+        },
+        "assistant_tells": {
+          "kind": "pct",
+          "overall": 0.026156941649899398,
+          "mean": null,
+          "median": null
+        },
+        "md_header": {
+          "kind": "pct",
+          "overall": 0.0,
+          "mean": null,
+          "median": null
+        },
+        "md_bold": {
+          "kind": "pct",
+          "overall": 0.0,
+          "mean": null,
+          "median": null
+        },
+        "md_list": {
+          "kind": "pct",
+          "overall": 0.01006036217303823,
+          "mean": null,
+          "median": null
+        },
+        "md_any": {
+          "kind": "pct",
+          "overall": 0.01006036217303823,
+          "mean": null,
+          "median": null
+        },
+        "casual_markers": {
+          "kind": "pct",
+          "overall": 0.014084507042253521,
+          "mean": null,
+          "median": null
+        },
+        "subjectless_start": {
+          "kind": "pct",
+          "overall": 0.0,
+          "mean": 0.0,
+          "median": 0.0
+        }
+      },
+      "assistant_tell_messages": {
+        "absolutely": 9,
+        "certainly": 3,
+        "comprehensive": 1
+      },
+      "source": "data/human_hn.jsonl",
+      "dropped_empty": 7
+    },
+    "human_hn (>=10 words)": {
+      "messages": 454,
+      "words": 24359,
+      "sentences": 1551,
+      "lines": 865,
+      "metrics": {
+        "cap_start": {
+          "kind": "pct",
+          "overall": 0.9509993552546744,
+          "mean": 0.9521513622507,
+          "median": 1.0
+        },
+        "lowercase_msgs": {
+          "kind": "pct",
+          "overall": 0.02869757174392936,
+          "mean": null,
+          "median": null
+        },
+        "period_end_lines": {
+          "kind": "pct",
+          "overall": 0.7167630057803468,
+          "mean": 0.7087613561181842,
+          "median": 1.0
+        },
+        "no_period_msgs": {
+          "kind": "pct",
+          "overall": 0.21585903083700442,
+          "mean": null,
+          "median": null
+        },
+        "em_dash_per_1k_words": {
+          "kind": "rate",
+          "overall": 0.2052629418284823,
+          "mean": null,
+          "median": null
+        },
+        "en_dash_per_1k_words": {
+          "kind": "rate",
+          "overall": 0.12315776509708937,
+          "mean": null,
+          "median": null
+        },
+        "dash_msgs": {
+          "kind": "pct",
+          "overall": 0.011013215859030838,
+          "mean": null,
+          "median": null
+        },
+        "emoji_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 0.0,
+          "median": 0.0
+        },
+        "emoji_msgs": {
+          "kind": "pct",
+          "overall": 0.0,
+          "mean": null,
+          "median": null
+        },
+        "words_per_line": {
+          "kind": "num",
+          "overall": null,
+          "mean": 28.160693641618497,
+          "median": 23
+        },
+        "lines_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 1.9052863436123348,
+          "median": 1.0
+        },
+        "words_per_msg": {
+          "kind": "num",
+          "overall": null,
+          "mean": 53.65418502202643,
+          "median": 36.0
+        },
+        "assistant_tells": {
+          "kind": "pct",
+          "overall": 0.028634361233480177,
+          "mean": null,
+          "median": null
+        },
+        "md_header": {
+          "kind": "pct",
+          "overall": 0.0,
+          "mean": null,
+          "median": null
+        },
+        "md_bold": {
+          "kind": "pct",
+          "overall": 0.0,
+          "mean": null,
+          "median": null
+        },
+        "md_list": {
+          "kind": "pct",
+          "overall": 0.011013215859030838,
+          "mean": null,
+          "median": null
+        },
+        "md_any": {
+          "kind": "pct",
+          "overall": 0.011013215859030838,
+          "mean": null,
+          "median": null
+        },
+        "casual_markers": {
+          "kind": "pct",
+          "overall": 0.015418502202643172,
+          "mean": null,
+          "median": null
+        },
+        "subjectless_start": {
+          "kind": "pct",
+          "overall": 0.0,
+          "mean": 0.0,
+          "median": 0.0
+        }
+      },
+      "assistant_tell_messages": {
+        "absolutely": 9,
+        "certainly": 3,
+        "comprehensive": 1
+      },
+      "min_words": 10,
+      "source": "data/human_hn.jsonl",
+      "dropped_empty": 7
+    }
+  }
+}

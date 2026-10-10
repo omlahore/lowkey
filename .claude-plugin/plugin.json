@@ -1,0 +1,14 @@
+{
+  "name": "lowkey",
+  "version": "1.0.0",
+  "description": "Makes your agent text like a person instead of a press release: lowercase, one thought per line, no em dashes, a couple of emojis. Code stays exact.",
+  "author": {
+    "name": "Om Lahore",
+    "url": "https://github.com/omlahore"
+  },
+  "homepage": "https://github.com/omlahore/lowkey",
+  "repository": "https://github.com/omlahore/lowkey",
+  "license": "MIT",
+  "keywords": ["claude-code", "skill", "writing-style", "texting", "tone", "github-comments"],
+  "hooks": "./hooks/claude-hooks.json"
+}

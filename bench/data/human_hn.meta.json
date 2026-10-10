@@ -1,0 +1,19 @@
+{
+  "collected_at": "2026-10-10T21:51Z",
+  "total": 504,
+  "params": {
+    "windows": 18,
+    "window_minutes": 20,
+    "per_window": 28,
+    "max_per_author": 2,
+    "max_per_story": 3,
+    "max_chars": 4000,
+    "start": "2025-01-01T00:00:00+00:00",
+    "until": "2026-10-11",
+    "seed": "2026"
+  },
+  "dropped_comments_by_reason": {
+    "capped_while_sampling": 72
+  },
+  "api_calls": 18
+}

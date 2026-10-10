@@ -1,0 +1,21 @@
+{
+  "name": "lowkey",
+  "interface": {
+    "displayName": "lowkey"
+  },
+  "plugins": [
+    {
+      "name": "lowkey",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/omlahore/lowkey.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

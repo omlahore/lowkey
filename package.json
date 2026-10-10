@@ -1,0 +1,10 @@
+{
+  "name": "lowkey-skill",
+  "private": true,
+  "description": "Makes your agent talk like the room, not like an assistant.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test tests/ && node tools/build-rules.js --check && python3 bench/style_stats.py --selftest",
+    "build": "node tools/build-rules.js"
+  }
+}
